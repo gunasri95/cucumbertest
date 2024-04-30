@@ -20,3 +20,9 @@ Feature: Currency Exchange API Testing
   Scenario: Validate response schema
     Given I make a GET request to the latest USD rates endpoint
     Then the API response should match the JSON schema
+    
+Feature: TestRunner
+	
+	Scenario: Successful testing
+    Given Test testrunner.java using Junit
+    Then Validates API call success and response time
