@@ -14,6 +14,17 @@ public class CurrencyExchangeStepDefinitions {
 
     private Response response;
 
+
+    // Getter for response
+    public Response getResponse() {
+        return response;
+    }
+
+    // Setter for response
+    public void setResponse(Response response) {
+        this.response = response;
+    }
+
     @Given("^I make a GET request to the latest USD rates endpoint$")
     public void makeGETRequestToLatestUSDRatesEndpoint() {
         response = APIClient.getLatestUSDRates();
